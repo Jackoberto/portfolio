@@ -149,8 +149,7 @@ main {
     padding: 16px;
     border-radius: 12px;
     text-decoration: none;
-    min-width: 280px;
-    max-width: 500px;
+    width: 300px;
     flex: 0 1 auto;
     background-color: #f7fbfd;
     border: 1px solid #d7e6ee;
@@ -233,4 +232,22 @@ main {
     .description--long {
         display: none;
     }
+}
+
+.contact {
+    margin-top: 3rem;
+    border-top: 1px solid #cccccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
