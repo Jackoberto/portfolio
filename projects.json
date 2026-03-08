@@ -14,7 +14,8 @@
       "Leveling system with experience points, rewards, and unlockable profile pictures.",
       "Implemented Unity LevelPlay Ads for rewarded ads.",
       "Implemented Unity In-App Purchasing for in-game purchases.",
-      "GitHub Actions CI/CD for Android and iOS running on a self-hosted macOS runner"
+      "GitHub Actions CI/CD for Android and iOS running on a self-hosted macOS runner",
+      "Implemented Sound and Music Management with FMOD Studio."
     ],
     "technologies": [
       "Unity",
@@ -25,7 +26,8 @@
       "Google Analytics + Looker Studio",
       "Google Play Services",
       "Unity LevelPlay Ads",
-      "Unity In-App Purchasing"
+      "Unity In-App Purchasing",
+      "FMOD Studio"
     ],
     "screenshots": [
       "images/lake-legends/LakeLegends1.jpg",
@@ -112,14 +114,35 @@
     "id": "spellfire",
     "title": "Spellfire",
     "subTitle": "Multiplayer 1v1 Arena",
-    "date": "2021",
-    "description": "Multiplayer 1v1 Arena description goes here.",
-    "role": "Developer",
-    "contributions": [],
-    "technologies": ["Unity", "C#"],
-    "screenshots": [],
-    "links": [],
-    "splashScreen": "images/Spellfire/SpellFire.jpg"
+    "date": "Jul 2021 - Aug 2021",
+    "shortDescription": "Spellfire is a 1v1 spellcasting arena where the goal is to capture the middle of the map while holding off your opponent.",
+    "role": "Gameplay and networking developer.",
+    "contributions": [
+      "Made a server browser to be able to connect to your other steam users.",
+      "Implemented networking, replication of game state, and player input.",
+      "Implemented gameplay systems with spells, abilities, scoring, and win conditions.",
+      "Integrated FMOD Studio for sound effects and music.",
+      "Integrated Steamworks sessions using Advanced Sessions Plugin."
+    ],
+    "technologies": [
+      "Steamworks", 
+      "Unreal Engine 4", 
+      "Unreal Blueprints", 
+      "FMOD Studio"
+    ],
+    "screenshots": [
+      "images/Spellfire/SpellFire1.png",
+      "images/Spellfire/SpellFire2.png"
+    ],
+    "links": [
+      {
+        "platform": "YouTube",
+        "description": "Gameplay video",
+        "url": "https://www.youtube.com/watch?v=EfAEcKTXZhY",
+        "logo": "images/yt_logo_fullcolor_almostblack_digital.png"
+      }
+    ],
+    "splashScreen": "images/Spellfire/SpellFire1.png"
   },
   {
     "id": "landing-party",
