@@ -99,27 +99,54 @@ main {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     max-width: 100rem;
+    gap: 20px;
 }
 
 .project-container {
-    padding: 0 10px;
-    margin: 0 10px;
-    border-radius: 0 5px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 12px;
+    background-color: #f7fbfd;
+    border: 1px solid #d7e6ee;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    text-align: center;
 }
 
-.project-container img:hover { 
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+.project-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: #226e93;
 }
 
-.project-container h3 { 
-    text-align: center; 
+.project-container:active {
+    transform: scale(0.98);
+    background-color: #eef6f9;
+}
+
+.project-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .project-container a { 
     text-decoration: none;
     color: #226e93;
+    display: block;
+}
+
+.project-cta {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #226e93;
+    font-size: 1rem;
+}
+
+.project-cta::after {
+    content: ' \2192'; /* Unicode right arrow */
 }
 
 .screenshots {
@@ -153,10 +180,11 @@ main {
 
 .project-link-card {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 16px;
-    padding: 16px;
+    padding: 24px;
     border-radius: 12px;
     text-decoration: none;
     width: 320px;
@@ -165,6 +193,7 @@ main {
     border: 1px solid #d7e6ee;
     color: inherit;
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    text-align: center;
 }
 
 .project-link-card:hover {
@@ -271,10 +300,30 @@ main {
     font-size: 1.1rem;
 }
 
+.nav-element:active {
+    background-color: #f0f0f0;
+    transform: scale(0.95);
+    border-radius: 4px;
+}
+
+.project-link-card:active {
+    transform: scale(0.98);
+    background-color: #eef6f9;
+}
+
 p > a {
-    color: #111111;
+    color: #226e93;
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+p > a:hover {
+    color: #1a5673;
+}
+
+p > a:active {
+    background-color: rgba(34, 110, 147, 0.1);
 }
 
 #projects {

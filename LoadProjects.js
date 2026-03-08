@@ -45,6 +45,7 @@ function loadProjectList(projects) {
             <a href="project.html?id=${project.id}">
                 <h3 class="project-title">${project.title}: ${project.subTitle}</h3>
                 <img class="project-image" src="${project.splashScreen}" alt="${project.title}: ${project.subTitle}" />
+                <span class="project-cta">View Project</span>
             </a>
         `;
         gridContainer.appendChild(projectDiv);
