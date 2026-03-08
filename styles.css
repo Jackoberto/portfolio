@@ -1,4 +1,34 @@
-﻿h1 {
+﻿:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --heading-color: #226e93;
+    --nav-bg: #ffffff;
+    --nav-shadow: rgba(0, 0, 0, 0.08);
+    --card-bg: #f7fbfd;
+    --card-border: #d7e6ee;
+    --card-active-bg: #eef6f9;
+    --screenshot-bg: #f0f0f0;
+    --secondary-text: #4f6b7a;
+    --contact-border: #cccccc;
+    --link-hover: #1a5673;
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --heading-color: #4db8ff;
+    --nav-bg: #1e1e1e;
+    --nav-shadow: rgba(0, 0, 0, 0.3);
+    --card-bg: #1e1e1e;
+    --card-border: #333333;
+    --card-active-bg: #2c2c2c;
+    --screenshot-bg: #2c2c2c;
+    --secondary-text: #b0b0b0;
+    --contact-border: #333333;
+    --link-hover: #7fcfff;
+}
+
+h1 {
     margin-bottom: 0;
 }
 
@@ -6,13 +36,14 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: white;
+    background-color: var(--nav-bg);
     padding: 2px 20px;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 0 var(--nav-shadow);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 html {
@@ -24,6 +55,9 @@ body {
     margin: 0;
     line-height: 1.6;
     font-family: 'Inter', Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 p {
@@ -32,8 +66,9 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #226e93;
+    color: var(--heading-color);
     font-family: 'Inter', Arial, sans-serif;
+    transition: color 0.3s ease;
 }
 
 .nav-left {
@@ -47,19 +82,21 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .nav-element {
     margin: 0 5px;
     white-space: nowrap;
-    color: #226e93;
+    color: var(--heading-color);
     text-decoration: none;
     font-weight: bold;
     font-Size: 1.4rem;
+    transition: color 0.3s ease;
 }
 
 .nav-element:focus-visible {
-    outline: 3px solid #226e93;
+    outline: 3px solid var(--heading-color);
     outline-offset: 4px;
     border-radius: 4px;
 }
@@ -111,21 +148,21 @@ main {
     padding: 10px;
     margin: 0;
     border-radius: 12px;
-    background-color: #f7fbfd;
-    border: 1px solid #d7e6ee;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.3s ease;
     text-align: center;
 }
 
 .project-container:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    border-color: #226e93;
+    border-color: var(--heading-color);
 }
 
 .project-container:active {
     transform: scale(0.98);
-    background-color: #eef6f9;
+    background-color: var(--card-active-bg);
 }
 
 .project-container img {
@@ -137,7 +174,7 @@ main {
 
 .project-container a { 
     text-decoration: none;
-    color: #226e93;
+    color: var(--heading-color);
     display: block;
 }
 
@@ -146,7 +183,7 @@ main {
     text-align: center;
     font-weight: bold;
     margin-top: 10px;
-    color: #226e93;
+    color: var(--heading-color);
     font-size: 1rem;
 }
 
@@ -164,12 +201,13 @@ main {
     width: 100%;
     max-height: 450px;
     object-fit: contain;
-    background-color: #f0f0f0;
+    background-color: var(--screenshot-bg);
+    transition: background-color 0.3s ease;
 }
 
 .project-date {
     font-size: 20px; 
-    color: #226e93;
+    color: var(--heading-color);
     margin-bottom: 0;
 }
 
@@ -194,17 +232,17 @@ main {
     text-decoration: none;
     width: 320px;
     flex: 0 1 auto;
-    background-color: #f7fbfd;
-    border: 1px solid #d7e6ee;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
     color: inherit;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.3s ease;
     text-align: center;
 }
 
 .project-link-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    border-color: #226e93;
+    border-color: var(--heading-color);
 }
 
 .project-link-logo-box {
@@ -226,6 +264,10 @@ main {
     border-radius: 0;
 }
 
+.dark-mode .project-link-image {
+    filter: brightness(0) invert(1);
+}
+
 .project-link-text h3 {
     margin: 0 0 4px 0;
     font-size: 1.05rem;
@@ -233,9 +275,10 @@ main {
 
 .project-link-text p {
     margin: 0;
-    color: #4f6b7a;
+    color: var(--secondary-text);
     line-height: 1.4;
     min-width: 0;
+    transition: color 0.3s ease;
 }
 
 .content > * {
@@ -296,9 +339,10 @@ main {
 
 .contact {
     margin-top: 3rem;
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid var(--contact-border);
     padding: 1rem;
     text-align: center;
+    transition: border-top 0.3s ease;
 }
 
 .contact a {
@@ -306,25 +350,25 @@ main {
 }
 
 .nav-element:active {
-    background-color: #f0f0f0;
+    background-color: var(--card-active-bg);
     transform: scale(0.95);
     border-radius: 4px;
 }
 
 .project-link-card:active {
     transform: scale(0.98);
-    background-color: #eef6f9;
+    background-color: var(--card-active-bg);
 }
 
 p > a {
-    color: #226e93;
+    color: var(--heading-color);
     text-decoration: underline;
     font-weight: 600;
     transition: color 0.2s ease;
 }
 
 p > a:hover {
-    color: #1a5673;
+    color: var(--link-hover);
 }
 
 p > a:active {
@@ -333,4 +377,44 @@ p > a:active {
 
 #projects {
     margin-top: 4rem;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--heading-color);
+    font-size: 1.4rem;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.theme-toggle:focus-visible {
+    outline: 3px solid var(--heading-color);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+.sun-icon {
+    display: none;
+}
+
+.moon-icon {
+    display: block;
+}
+
+.dark-mode .sun-icon {
+    display: block;
+}
+
+.dark-mode .moon-icon {
+    display: none;
 }
