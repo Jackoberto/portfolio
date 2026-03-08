@@ -1,0 +1,96 @@
+﻿[
+  {
+    "id": "lake-legends",
+    "title": "Lake Legends",
+    "subTitle": "Mobile Fishing Game",
+    "date": "Mar 2021 – Present",
+    "description": "<b>Lake Legends</b> is a fantasy fishing game focused on exploration, collection, and progression. Players travel across mystical lakes inspired by Viking, Norse, and medieval themes, catching more than 500 fish species while uncovering environmental lore and hidden stories tied to each location. <br>The game includes gear collection and upgrade systems, including a gacha-based mechanic to earn fishing gear. As a free-to-play title, <b>Lake Legends</b> combines relaxing fishing mechanics with long-term progression, collectible content, and light narrative exploration.<br>It was originally a month long student project at <b>Forsbergsskola</b> that eventually became a commercial project when we started <b>Bridge Games Studio</b>.",
+    "role": "Lead developer. Responsible for developing the entire game, including gameplay mechanics, loot generation, integrating plugins, and gameplay architecture.",
+    "contributions": [
+      "Integrated Firebase Firestore, Authentication, Analytics, Crashlytics, and Remote Config.",
+      "Created an extensive loot system with thousands of variations.",
+      "Created multiple gameplay systems such as achievements, daily objectives, tutorials, and the main fishing minigame.",
+      "Leveling system with experience points, rewards, and unlockable profile pictures.",
+      "Implemented Unity LevelPlay Ads for rewarded ads.",
+      "Implemented Unity In-App Purchasing for in-game purchases.",
+      "GitHub Actions CI/CD for Android and iOS running on a self-hosted macOS runner"
+    ],
+    "technologies": [
+      "Unity",
+      "C#",
+      "GitHub",
+      "GitHub Actions",
+      "Firebase",
+      "Google Analytics + Looker Studio",
+      "Google Play Services",
+      "Unity LevelPlay Ads",
+      "Unity In-App Purchasing"
+    ],
+    "screenshots": [
+      "images/lake-legends/LakeLegends1.jpg",
+      "images/lake-legends/LakeLegends2.jpg",
+      "images/lake-legends/LakeLegends3.jpg",
+      "images/lake-legends/LakeLegends4.jpg"
+    ],
+    "links": [
+      {
+        "platform": "Google Play",
+        "description": "Android release",
+        "url": "https://play.google.com/store/apps/details?id=com.bridgegamesstudio.lakelegends",
+        "logo": "images/GooglePlayBadge.svg"
+      },
+      {
+        "platform": "App Store",
+        "description": "iOS release",
+        "url": "https://apps.apple.com/us/app/lake-legends/id6472892376",
+        "logo": "images/AppStoreBadge.svg"
+      },
+      {
+        "platform": "YouTube",
+        "description": "Gameplay video",
+        "url": "https://www.youtube.com/watch?v=G4W_ykVt6WY",
+        "logo": "images/yt_logo_fullcolor_almostblack_digital.png"
+      }
+    ],
+    "splashScreen": "images/lake-legends/SplashScreen.png"
+  },
+  {
+    "id": "forceberg",
+    "title": "Forceberg",
+    "subTitle": "Physics-based Puzzle Platformer",
+    "date": "2021",
+    "description": "Physics-based Puzzle Platformer description goes here.",
+    "role": "Developer",
+    "contributions": [],
+    "technologies": ["Unity", "C#"],
+    "screenshots": [],
+    "links": [],
+    "splashScreen": "images/project2.png"
+  },
+  {
+    "id": "spellfire",
+    "title": "Spellfire",
+    "subTitle": "Multiplayer 1v1 Arena",
+    "date": "2021",
+    "description": "Multiplayer 1v1 Arena description goes here.",
+    "role": "Developer",
+    "contributions": [],
+    "technologies": ["Unity", "C#"],
+    "screenshots": [],
+    "links": [],
+    "splashScreen": "images/Spellfire/SpellFire.jpg"
+  },
+  {
+    "id": "landing-party",
+    "title": "Landing Party",
+    "subTitle": "AR RPG",
+    "date": "2021",
+    "description": "AR RPG description goes here.",
+    "role": "Developer",
+    "contributions": [],
+    "technologies": ["Unity", "C#"],
+    "screenshots": [],
+    "links": [],
+    "splashScreen": "images/project4.png"
+  }
+]
