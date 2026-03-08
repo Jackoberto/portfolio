@@ -46,13 +46,15 @@
         "platform": "App Store",
         "description": "iOS release",
         "url": "https://apps.apple.com/us/app/lake-legends/id6472892376",
-        "logo": "images/AppStoreBadge.svg"
+        "logo": "images/AppStoreBadge.svg",
+        "logoDark": "images/AppStoreBadgeDarkMode.svg"
       },
       {
         "platform": "YouTube",
         "description": "Gameplay video",
         "url": "https://www.youtube.com/watch?v=G4W_ykVt6WY",
-        "logo": "images/yt_logo_fullcolor_almostblack_digital.png"
+        "logo": "images/yt_logo_fullcolor_almostblack_digital.png",
+        "logoDark": "images/yt_logo_fullcolor_white_digital.png"
       }
     ],
     "splashScreen": "images/lake-legends/SplashScreen.png"
@@ -87,19 +89,22 @@
         "platform": "itch.io",
         "description": "Playable Web build",
         "url": "https://jackoberto.itch.io/forceberg",
-        "logo": "images/AvailableOnItch.svg"
+        "logo": "images/AvailableOnItch.svg",
+        "logoDark": "images/AvailableOnItchDarkMode.svg"
       },
       {
         "platform": "YouTube",
         "description": "Gameplay video",
         "url": "https://www.youtube.com/watch?v=MOVHBreeshY",
-        "logo": "images/yt_logo_fullcolor_almostblack_digital.png"
+        "logo": "images/yt_logo_fullcolor_almostblack_digital.png",
+        "logoDark": "images/yt_logo_fullcolor_white_digital.png"
       },
       {
         "platform": "GitHub",
         "description": "Source code",
         "url": "https://github.com/forsbergsskola-se/ForceBerg",
-        "logo": "images/GitHub_Lockup_Black_Clearspace.svg"
+        "logo": "images/GitHub_Lockup_Black_Clearspace.svg",
+        "logoDark": "images/GitHub_Lockup_White_Clearspace.svg"
       },
       {
         "platform": "B&W Jam",
@@ -139,7 +144,8 @@
         "platform": "YouTube",
         "description": "Gameplay video",
         "url": "https://www.youtube.com/watch?v=EfAEcKTXZhY",
-        "logo": "images/yt_logo_fullcolor_almostblack_digital.png"
+        "logo": "images/yt_logo_fullcolor_almostblack_digital.png",
+        "logoDark": "images/yt_logo_fullcolor_white_digital.png"
       }
     ],
     "splashScreen": "images/spell-fire/SpellFire1.png"
@@ -183,7 +189,8 @@
         "platform": "App Store",
         "description": "iOS release",
         "url": "https://apps.apple.com/us/app/landing-party-an-outdoor-rpg/id6469038407",
-        "logo": "images/AppStoreBadge.svg"
+        "logo": "images/AppStoreBadge.svg",
+        "logoDark": "images/AppStoreBadgeDarkMode.svg"
       }
     ],
     "splashScreen": "images/landing-party/Landing-Party-Promo-Art-2-logo-SS.jpg"

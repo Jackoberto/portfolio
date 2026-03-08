@@ -264,8 +264,16 @@ main {
     border-radius: 0;
 }
 
-.dark-mode .project-link-image {
-    filter: brightness(0) invert(1);
+.logo-dark {
+    display: none;
+}
+
+.dark-mode .logo-light {
+    display: none;
+}
+
+.dark-mode .logo-dark {
+    display: block;
 }
 
 .project-link-text h3 {
@@ -316,7 +324,18 @@ main {
         grid-template-columns: 1fr;
     }
     
-    .nav-right {
+    .nav-right .nav-element:not([href="#contact"]):not([href="index.html#projects"]) {
+        display: none;
+    }
+    
+    .theme-toggle {
+        display: flex !important;
+    }
+    
+    .nav-right a[href="#projects"],
+    .nav-right a[href="index.html#projects"],
+    .nav-right a[href="https://github.com/jackoberto"],
+    .nav-right a[href="https://www.linkedin.com/in/jackkarlsson/"] {
         display: none;
     }
 

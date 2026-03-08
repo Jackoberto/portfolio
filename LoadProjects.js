@@ -159,9 +159,13 @@ function loadProjectDetails(project) {
                 a.rel = 'noopener noreferrer';
                 a.ariaLabel = `Visit ${project.title} on ${link.platform}`;
 
+                const logoSrc = link.logo;
+                const logoDarkSrc = link.logoDark || link.logo; // Use normal logo if dark one isn't provided
+
                 a.innerHTML = `
                     <div class="project-link-logo-box">
-                        <img class="project-link-image" src="${link.logo}" alt="${link.platform} Logo">
+                        <img class="project-link-image logo-light" src="${logoSrc}" alt="${link.platform} Logo">
+                        <img class="project-link-image logo-dark" src="${logoDarkSrc}" alt="${link.platform} Logo">
                     </div>
                     <div class="project-link-text">
                         <h3>${link.platform}</h3>
