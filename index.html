@@ -2,39 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jack Karlsson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Karlsson | Portfolio - Game Developer & Software Engineer</title>
+    <meta name="description" content="Portfolio of Jack Karlsson, a software engineer specializing in game development (Unity, C#, Unreal Engine) and interactive software.">
+    <meta name="keywords" content="Jack Karlsson, Portfolio, Game Developer, Software Engineer, Unity, C#, Unreal Engine, WebGL, Lake Legends, Landing Party">
+    <meta name="author" content="Jack Karlsson">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jackkarlsson.com">
+    <meta property="og:title" content="Jack Karlsson | Portfolio - Game Developer & Software Engineer">
+    <meta property="og:description" content="I build games and interactive software. Explore my projects and experience in game development and software engineering.">
+    <meta property="og:image" content="https://jackkarlsson.com/images/lake-legends/SplashScreen.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jackkarlsson.com">
+    <meta property="twitter:title" content="Jack Karlsson | Portfolio - Game Developer & Software Engineer">
+    <meta property="twitter:description" content="I build games and interactive software. Explore my projects and experience in game development and software engineering.">
+    <meta property="twitter:image" content="https://jackkarlsson.com/images/lake-legends/SplashScreen.png">
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="LoadProjects.js"></script>
 </head>
-<nav>
+<body>
+<nav aria-label="Main Navigation">
     <div class="nav-left">
-        <h2 class="nav-element"><a href="index.html">Home</a></h2>
+        <a class="nav-element" href="index.html">Home</a>
     </div>
     <div class="nav-right">
-        <h2 class="nav-element"><a href="https://github.com/jackoberto">GitHub</a></h2>
-        <h2 class="nav-element"><a href="https://www.linkedin.com/in/jackkarlsson/">LinkedIn</a></h2>
+        <a class="nav-element" href="#projects"> Projects</a>
+        <a class="nav-element" href="#contact">Contact</a>
+        <a class="nav-element" href="https://github.com/jackoberto" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="nav-element" href="https://www.linkedin.com/in/jackkarlsson/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
 </nav>
-<body>
 <header class="center-content">
-    <h1>Jack Karlsson</h1>
-    <h2>Game Developer</h2>
-    <h3>Projects</h3>
+    <h1>Hi, I'm Jack</h1>
+    <p>I build games and interactive software.</p>
+    <a id="view-projects" class="nav-element" href="#projects"> View projects</a>
+    <a id="contact-me" class="nav-element" href="#contact">Contact me</a>
 </header>
 <main class="content">
-    <section class="content">
+    <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading" class="center-content">About</h2>
+        <p>
+            I’m a software engineer specializing in game development and interactive software. I currently work at <a href="https://www.pley.com" target="_blank" rel="noopener noreferrer">Pley</a> as a porting engineer and game developer, where I focus on bringing mobile games to the web using WebGL.
+
+            I’m also the co-founder and Lead Developer at <a href="https://www.bridgegamesstudio.com">Bridge Games Studio</a>, where we are developing the mobile fishing game <a href="project.html?id=lake-legends">Lake Legends</a>.
+
+            My experience spans a range of technologies including <b>C#</b>, <b>Unity</b>, <b>Unreal Engine</b>, <b>GitHub Actions</b>, and <b>Unity AR Foundation</b> (<b>ARCore</b> and <b>ARKit</b>), as well as porting mobile games to <b>WebGL</b>.
+
+            I have over <b>7 years</b> of experience in software development and a background in game design and programming. I’m an alumni of <b>Forsbergsskola</b>, where I studied Game Programming.
+        </p>
+    </section>
+    <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" style="margin-bottom: 0" class="center-content">Projects</h2>
         <section class="grid-container">
         </section>
     </section>
 </main>
-<section class="contact" id="contact">
-    <h2>Contact</h2>
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact</h2>
     <p><a href="mailto:jackoberto@gmail.com">jackoberto@gmail.com</a></p>
-    <p><a href="https://www.linkedin.com/in/jackkarlsson/">LinkedIn</a></p>
+    <p><a href="https://www.linkedin.com/in/jackkarlsson/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
 </section>
 </body>
 </html>

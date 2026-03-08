@@ -52,9 +52,32 @@ function loadProjectList(projects) {
 }
 
 function loadProjectDetails(project) {
-    if (document.getElementById('page-title')) document.getElementById('page-title').textContent = project.title;
+    if (document.getElementById('page-title')) document.getElementById('page-title').textContent = `${project.title} | Jack Karlsson Portfolio`;
     if (document.getElementById('project-title')) document.getElementById('project-title').textContent = project.title;
     if (document.getElementById('project-date')) document.getElementById('project-date').textContent = project.date;
+    
+    // Dynamic SEO Metadata
+    const metaDesc = document.getElementById('meta-description');
+    if (metaDesc) metaDesc.content = project.shortDescription || `Details about ${project.title}, a project by Jack Karlsson.`;
+    
+    const ogTitle = document.getElementById('og-title');
+    if (ogTitle) ogTitle.content = `${project.title} | Jack Karlsson Portfolio`;
+    
+    const ogDesc = document.getElementById('og-description');
+    if (ogDesc) ogDesc.content = project.shortDescription;
+    
+    const ogImage = document.getElementById('og-image');
+    if (ogImage) ogImage.content = `https://jackkarlsson.com/${project.splashScreen}`;
+
+    const twitterTitle = document.getElementById('twitter-title');
+    if (twitterTitle) twitterTitle.content = `${project.title} | Jack Karlsson Portfolio`;
+    
+    const twitterDesc = document.getElementById('twitter-description');
+    if (twitterDesc) twitterDesc.content = project.shortDescription;
+    
+    const twitterImage = document.getElementById('twitter-image');
+    if (twitterImage) twitterImage.content = `https://jackkarlsson.com/${project.splashScreen}`;
+
     if (document.getElementById('project-description')) {
         if (project.description) {
             document.getElementById('project-description').innerHTML = project.description;
@@ -73,7 +96,7 @@ function loadProjectDetails(project) {
                 const img = document.createElement('img');
                 img.className = 'project-screenshot';
                 img.src = src;
-                img.alt = project.title;
+                img.alt = `${project.title} Screenshot`;
                 screenshotsSection.appendChild(img);
             });
         } else {
@@ -133,10 +156,11 @@ function loadProjectDetails(project) {
                 a.href = link.url;
                 a.target = '_blank';
                 a.rel = 'noopener noreferrer';
+                a.ariaLabel = `Visit ${project.title} on ${link.platform}`;
 
                 a.innerHTML = `
                     <div class="project-link-logo-box">
-                        <img class="project-link-image" src="${link.logo}" alt="${link.platform}">
+                        <img class="project-link-image" src="${link.logo}" alt="${link.platform} Logo">
                     </div>
                     <div class="project-link-text">
                         <h3>${link.platform}</h3>

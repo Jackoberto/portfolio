@@ -161,7 +161,7 @@
     "technologies": [
       "Unity", 
       "C#",
-      "ARCore",
+      "AR Foundation (ARCore and ARKit)",
       "MapBox",
       "OpenStreetMap",
       "FMOD Studio"

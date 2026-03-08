@@ -2,58 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title id="page-title">Project Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Project Details | Jack Karlsson</title>
+    <meta id="meta-description" name="description" content="Project details for Jack Karlsson's portfolio.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jackkarlsson.com">
+    <meta id="og-title" property="og:title" content="Project Details | Jack Karlsson">
+    <meta id="og-description" property="og:description" content="Explore this project by Jack Karlsson.">
+    <meta id="og-image" property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jackkarlsson.com">
+    <meta id="twitter-title" property="twitter:title" content="Project Details | Jack Karlsson">
+    <meta id="twitter-description" property="twitter:description" content="Explore this project by Jack Karlsson.">
+    <meta id="twitter-image" property="twitter:image" content="">
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="LoadProjects.js"></script>
 </head>
 <body>
-<nav>
+<nav aria-label="Main Navigation">
     <div class="nav-left">
-        <h2 class="nav-element"><a href="index.html">Home</a></h2>
+        <a class="nav-element" href="index.html">Home</a>
     </div>
     <div class="nav-right">
-        <h2 class="nav-element"><a href="https://github.com/jackoberto">GitHub</a></h2>
-        <h2 class="nav-element"><a href="https://www.linkedin.com/in/jackkarlsson/">LinkedIn</a></h2>
+        <a class="nav-element" href="index.html#projects"> Projects</a>
+        <a class="nav-element" href="#contact">Contact</a>
+        <a class="nav-element" href="https://github.com/jackoberto" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="nav-element" href="https://www.linkedin.com/in/jackkarlsson/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
 </nav>
 <header class="content">
     <h1 id="project-title">Project Name</h1>
     <p id="project-date" class="project-date">Date</p>
-    <h2 style="margin-bottom: 0">Description</h2>
+    <h2 id="description-heading" style="margin-bottom: 0">Description</h2>
 </header>
 <main class="content">
-    <section>
+    <section aria-labelledby="description-heading">
         <p id="project-description" class="project-description description--long"></p>
         <p id="project-description-short" class="description--short"></p>
     </section>
-    <section id="project-screenshots" class="screenshots">
+    <section id="project-screenshots" class="screenshots" aria-label="Project Screenshots">
     </section>
     <section id="project-role-section">
-        <h2>Role</h2>
-        <p id="project-role"></p>
+        <h2 id="role-heading">Role</h2>
+        <p id="project-role" aria-labelledby="role-heading"></p>
         <div id="project-contributions-container">
-            <h2>Contributions</h2>
-            <ul id="project-contributions"></ul>
+            <h2 id="contributions-heading">Contributions</h2>
+            <ul id="project-contributions" aria-labelledby="contributions-heading"></ul>
         </div>
     </section>
     <section id="project-technologies-section">
-        <h2>Technologies</h2>
-        <ul id="project-technologies"></ul>
+        <h2 id="technologies-heading">Technologies</h2>
+        <ul id="project-technologies" aria-labelledby="technologies-heading"></ul>
     </section>
     <section id="project-links-section" class="project-links">
-        <h2>Links</h2>
-        <div id="project-links-grid" class="project-link-grid">
+        <h2 id="links-heading">Links</h2>
+        <div id="project-links-grid" class="project-link-grid" aria-labelledby="links-heading">
         </div>
     </section>
 </main>
-<section class="contact" id="contact">
-    <h2>Contact</h2>
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact</h2>
     <p><a href="mailto:jackoberto@gmail.com">jackoberto@gmail.com</a></p>
-    <p><a href="https://www.linkedin.com/in/jackkarlsson/">LinkedIn</a></p>
+    <p><a href="https://www.linkedin.com/in/jackkarlsson/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
 </section>
 </body>
 </html>
