@@ -40,7 +40,8 @@
         "platform": "Google Play",
         "description": "Android release",
         "url": "https://play.google.com/store/apps/details?id=com.bridgegamesstudio.lakelegends",
-        "logo": "images/GooglePlayBadge.svg"
+        "logo": "images/GooglePlayBadge.svg",
+        "logoDark": "images/GooglePlayBadge.svg"
       },
       {
         "platform": "App Store",
@@ -110,7 +111,8 @@
         "platform": "B&W Jam",
         "description": "Game Jam entry",
         "url": "https://itch.io/jam/black-and-white-jam-0101201/results",
-        "logo": "images/+A0e+o.png"
+        "logo": "images/+A0e+o.png",
+        "logoDark": "images/+A0e+o.png"
       }
     ],
     "splashScreen": "images/forceberg/ForceBergPromotional.png"
@@ -183,7 +185,8 @@
         "platform": "Google Play",
         "description": "Android release",
         "url": "https://play.google.com/store/apps/details?id=com.monsarrat.landingparty",
-        "logo": "images/GooglePlayBadge.svg"
+        "logo": "images/GooglePlayBadge.svg",
+        "logoDark": "images/GooglePlayBadge.svg"
       },
       {
         "platform": "App Store",
