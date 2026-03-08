@@ -131,8 +131,8 @@
       "FMOD Studio"
     ],
     "screenshots": [
-      "images/Spellfire/SpellFire1.png",
-      "images/Spellfire/SpellFire2.png"
+      "images/spell-fire/SpellFire1.png",
+      "images/spell-fire/SpellFire2.png"
     ],
     "links": [
       {
@@ -142,19 +142,50 @@
         "logo": "images/yt_logo_fullcolor_almostblack_digital.png"
       }
     ],
-    "splashScreen": "images/Spellfire/SpellFire1.png"
+    "splashScreen": "images/spell-fire/SpellFire1.png"
   },
   {
     "id": "landing-party",
     "title": "Landing Party",
-    "subTitle": "AR RPG",
-    "date": "2021",
-    "description": "AR RPG description goes here.",
-    "role": "Developer",
-    "contributions": [],
-    "technologies": ["Unity", "C#"],
-    "screenshots": [],
-    "links": [],
-    "splashScreen": "images/project4.png"
+    "subTitle": "Outdoor RPG",
+    "date": "Nov 2021 - Oct 2024",
+    "shortDescription": "Landing Party is an outdoor RPG where players explore a foreign planet in their own backyard or local park.",
+    "role": "AR Developer, Gameplay and systems developer.",
+    "contributions": [
+      "Implemented AR interactions and gameplay mechanics.",
+      "Created a map system using raster tiles and MapBox.",
+      "Responsible for reviewing and merging over 1000 pull requests in a team of up to 15 developers.",
+      "Integrated animations, and sound effects with FMOD Studio.",
+      "Improved AR experience by refining how the world interacts with real slopes and terrain improving immersion."
+    ],
+    "technologies": [
+      "Unity", 
+      "C#",
+      "ARCore",
+      "MapBox",
+      "OpenStreetMap",
+      "FMOD Studio"
+    ],
+    "screenshots": [
+      "images/landing-party/LandingParty1.webp",
+      "images/landing-party/LandingParty3.webp",
+      "images/landing-party/LandingParty2.webp",
+      "images/landing-party/LandingParty4.webp"
+    ],
+    "links": [
+      {
+        "platform": "Google Play",
+        "description": "Android release",
+        "url": "https://play.google.com/store/apps/details?id=com.monsarrat.landingparty",
+        "logo": "images/GooglePlayBadge.svg"
+      },
+      {
+        "platform": "App Store",
+        "description": "iOS release",
+        "url": "https://apps.apple.com/us/app/landing-party-an-outdoor-rpg/id6469038407",
+        "logo": "images/AppStoreBadge.svg"
+      }
+    ],
+    "splashScreen": "images/landing-party/Landing-Party-Promo-Art-2-logo-SS.jpg"
   }
 ]

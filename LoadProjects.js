@@ -71,6 +71,7 @@ function loadProjectDetails(project) {
         if (project.screenshots && project.screenshots.length > 0) {
             project.screenshots.forEach(src => {
                 const img = document.createElement('img');
+                img.className = 'project-screenshot';
                 img.src = src;
                 img.alt = project.title;
                 screenshotsSection.appendChild(img);
