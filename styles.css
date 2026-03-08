@@ -198,6 +198,14 @@ main {
     box-sizing: border-box;
 }
 
+.description--short {
+    display: none;
+}
+
+.description--long {
+    display: block;
+}
+
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
@@ -208,6 +216,14 @@ main {
     }
     
     .nav-right {
+        display: none;
+    }
+
+    .description--short {
+        display: block;
+    }
+
+    .description--long {
         display: none;
     }
 }

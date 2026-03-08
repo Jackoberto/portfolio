@@ -4,6 +4,7 @@
     "title": "Lake Legends",
     "subTitle": "Mobile Fishing Game",
     "date": "Mar 2021 – Present",
+    "shortDescription": "A mobile fantasy fishing game that combines exploration, collection, and progression.",
     "description": "<b>Lake Legends</b> is a fantasy fishing game focused on exploration, collection, and progression. Players travel across mystical lakes inspired by Viking, Norse, and medieval themes, catching more than 500 fish species while uncovering environmental lore and hidden stories tied to each location. <br>The game includes gear collection and upgrade systems, including a gacha-based mechanic to earn fishing gear. As a free-to-play title, <b>Lake Legends</b> combines relaxing fishing mechanics with long-term progression, collectible content, and light narrative exploration.<br>It was originally a month long student project at <b>Forsbergsskola</b> that eventually became a commercial project when we started <b>Bridge Games Studio</b>.",
     "role": "Lead developer. Responsible for developing the entire game, including gameplay mechanics, loot generation, integrating plugins, and gameplay architecture.",
     "contributions": [
@@ -58,14 +59,54 @@
     "id": "forceberg",
     "title": "Forceberg",
     "subTitle": "Physics-based Puzzle Platformer",
-    "date": "2021",
-    "description": "Physics-based Puzzle Platformer description goes here.",
-    "role": "Developer",
-    "contributions": [],
-    "technologies": ["Unity", "C#"],
-    "screenshots": [],
-    "links": [],
-    "splashScreen": "images/project2.png"
+    "date": "Jun 2021",
+    "shortDescription": "Forceberg is a physics-based puzzle platformer, created for the Black and White Jam №∞+1 game jam, which we also won.",
+    "role": "Gameplay and systems developer.",
+    "contributions": [
+      "Created the player controller and gravity manipulation system." , 
+      "Created some of the levels.", 
+      "Added high score system and optional on-screen timer.", 
+      "Configured and programmed some of the physics objects."
+    ],
+    "technologies": [
+      "Unity", 
+      "C#", 
+      "Unity Physics", 
+      "Unity Tilemaps"
+    ],
+    "screenshots": [
+      "images/forceberg/ForceBerg2.png",
+      "images/forceberg/ForceBerg3.png",
+      "images/forceberg/ForceBerg4.png",
+      "images/forceberg/ForceBerg8.png"
+    ],
+    "links": [
+      {
+        "platform": "itch.io",
+        "description": "Playable Web build",
+        "url": "https://jackoberto.itch.io/forceberg",
+        "logo": "images/AvailableOnItch.svg"
+      },
+      {
+        "platform": "YouTube",
+        "description": "Gameplay video",
+        "url": "https://www.youtube.com/watch?v=MOVHBreeshY",
+        "logo": "images/yt_logo_fullcolor_almostblack_digital.png"
+      },
+      {
+        "platform": "GitHub",
+        "description": "Source code",
+        "url": "https://github.com/forsbergsskola-se/ForceBerg",
+        "logo": "images/GitHub_Lockup_Black_Clearspace.svg"
+      },
+      {
+        "platform": "B&W Jam",
+        "description": "Game Jam entry",
+        "url": "https://itch.io/jam/black-and-white-jam-0101201/results",
+        "logo": "images/+A0e+o.png"
+      }
+    ],
+    "splashScreen": "images/forceberg/ForceBergPromotional.png"
   },
   {
     "id": "spellfire",

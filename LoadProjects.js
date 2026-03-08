@@ -55,7 +55,15 @@ function loadProjectDetails(project) {
     if (document.getElementById('page-title')) document.getElementById('page-title').textContent = project.title;
     if (document.getElementById('project-title')) document.getElementById('project-title').textContent = project.title;
     if (document.getElementById('project-date')) document.getElementById('project-date').textContent = project.date;
-    if (document.getElementById('project-description')) document.getElementById('project-description').innerHTML = project.description;
+    if (document.getElementById('project-description')) {
+        if (project.description) {
+            document.getElementById('project-description').innerHTML = project.description;
+        }
+        else if (project.shortDescription) {
+            document.getElementById('project-description').innerHTML = project.shortDescription;
+        }
+    }
+    if (document.getElementById('project-description-short')) document.getElementById('project-description-short').innerHTML = project.shortDescription;
 
     // Screenshots
     const screenshotsSection = document.getElementById('project-screenshots');
