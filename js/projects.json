@@ -30,35 +30,35 @@
       "FMOD Studio"
     ],
     "screenshots": [
-      "images/lake-legends/LakeLegends1.jpg",
-      "images/lake-legends/LakeLegends2.jpg",
-      "images/lake-legends/LakeLegends3.jpg",
-      "images/lake-legends/LakeLegends4.jpg"
+      "images/lake-legends/lake-legends-1.jpg",
+      "images/lake-legends/lake-legends-2.jpg",
+      "images/lake-legends/lake-legends-3.jpg",
+      "images/lake-legends/lake-legends-4.jpg"
     ],
     "links": [
       {
         "platform": "Google Play",
         "description": "Android release",
         "url": "https://play.google.com/store/apps/details?id=com.bridgegamesstudio.lakelegends",
-        "logo": "images/GooglePlayBadge.svg",
-        "logoDark": "images/GooglePlayBadge.svg"
+        "logo": "images/logos/google-play-badge.svg",
+        "logoDark": "images/logos/google-play-badge.svg"
       },
       {
         "platform": "App Store",
         "description": "iOS release",
         "url": "https://apps.apple.com/us/app/lake-legends/id6472892376",
-        "logo": "images/AppStoreBadge.svg",
-        "logoDark": "images/AppStoreBadgeDarkMode.svg"
+        "logo": "images/logos/app-store-badge.svg",
+        "logoDark": "images/logos/app-store-badge-dark-mode.svg"
       },
       {
         "platform": "YouTube",
         "description": "Gameplay video",
         "url": "https://www.youtube.com/watch?v=G4W_ykVt6WY",
-        "logo": "images/yt_logo_fullcolor_almostblack_digital.png",
-        "logoDark": "images/yt_logo_fullcolor_white_digital.png"
+        "logo": "images/logos/yt-logo-fullcolor-almostblack-digital.png",
+        "logoDark": "images/logos/yt-logo-fullcolor-white-digital.png"
       }
     ],
-    "splashScreen": "images/lake-legends/SplashScreen.png"
+    "splashScreen": "images/lake-legends/lake-legends-splash.png"
   },
   {
     "id": "forceberg",
@@ -80,42 +80,42 @@
       "Unity Tilemaps"
     ],
     "screenshots": [
-      "images/forceberg/ForceBerg2.png",
-      "images/forceberg/ForceBerg3.png",
-      "images/forceberg/ForceBerg4.png",
-      "images/forceberg/ForceBerg8.png"
+      "images/forceberg/forceberg-2.png",
+      "images/forceberg/forceberg-3.png",
+      "images/forceberg/forceberg-4.png",
+      "images/forceberg/forceberg-8.png"
     ],
     "links": [
       {
         "platform": "itch.io",
         "description": "Playable Web build",
         "url": "https://jackoberto.itch.io/forceberg",
-        "logo": "images/AvailableOnItch.svg",
-        "logoDark": "images/AvailableOnItchDarkMode.svg"
+        "logo": "images/logos/available-on-itch.svg",
+        "logoDark": "images/logos/available-on-itch-dark-mode.svg"
       },
       {
         "platform": "YouTube",
         "description": "Gameplay video",
         "url": "https://www.youtube.com/watch?v=MOVHBreeshY",
-        "logo": "images/yt_logo_fullcolor_almostblack_digital.png",
-        "logoDark": "images/yt_logo_fullcolor_white_digital.png"
+        "logo": "images/logos/yt-logo-fullcolor-almostblack-digital.png",
+        "logoDark": "images/logos/yt-logo-fullcolor-white-digital.png"
       },
       {
         "platform": "GitHub",
         "description": "Source code",
         "url": "https://github.com/forsbergsskola-se/ForceBerg",
-        "logo": "images/GitHub_Lockup_Black_Clearspace.svg",
-        "logoDark": "images/GitHub_Lockup_White_Clearspace.svg"
+        "logo": "images/logos/github-lockup-black-clearspace.svg",
+        "logoDark": "images/logos/github-lockup-white-clearspace.svg"
       },
       {
         "platform": "B&W Jam",
         "description": "Game Jam entry",
         "url": "https://itch.io/jam/black-and-white-jam-0101201/results",
-        "logo": "images/+A0e+o.png",
-        "logoDark": "images/+A0e+o.png"
+        "logo": "images/logos/bw-jam-logo.png",
+        "logoDark": "images/logos/bw-jam-logo.png"
       }
     ],
-    "splashScreen": "images/forceberg/ForceBergPromotional.png"
+    "splashScreen": "images/forceberg/forceberg-promo.png"
   },
   {
     "id": "spellfire",
@@ -138,19 +138,19 @@
       "FMOD Studio"
     ],
     "screenshots": [
-      "images/spell-fire/SpellFire1.png",
-      "images/spell-fire/SpellFire2.png"
+      "images/spell-fire/spell-fire-1.png",
+      "images/spell-fire/spell-fire-2.png"
     ],
     "links": [
       {
         "platform": "YouTube",
         "description": "Gameplay video",
         "url": "https://www.youtube.com/watch?v=EfAEcKTXZhY",
-        "logo": "images/yt_logo_fullcolor_almostblack_digital.png",
-        "logoDark": "images/yt_logo_fullcolor_white_digital.png"
+        "logo": "images/logos/yt-logo-fullcolor-almostblack-digital.png",
+        "logoDark": "images/logos/yt-logo-fullcolor-white-digital.png"
       }
     ],
-    "splashScreen": "images/spell-fire/SpellFire1.png"
+    "splashScreen": "images/spell-fire/spell-fire-1.png"
   },
   {
     "id": "landing-party",
@@ -175,27 +175,27 @@
       "FMOD Studio"
     ],
     "screenshots": [
-      "images/landing-party/LandingParty1.webp",
-      "images/landing-party/LandingParty3.webp",
-      "images/landing-party/LandingParty2.webp",
-      "images/landing-party/LandingParty4.webp"
+      "images/landing-party/landing-party-1.webp",
+      "images/landing-party/landing-party-3.webp",
+      "images/landing-party/landing-party-2.webp",
+      "images/landing-party/landing-party-4.webp"
     ],
     "links": [
       {
         "platform": "Google Play",
         "description": "Android release",
         "url": "https://play.google.com/store/apps/details?id=com.monsarrat.landingparty",
-        "logo": "images/GooglePlayBadge.svg",
-        "logoDark": "images/GooglePlayBadge.svg"
+        "logo": "images/logos/google-play-badge.svg",
+        "logoDark": "images/logos/google-play-badge.svg"
       },
       {
         "platform": "App Store",
         "description": "iOS release",
         "url": "https://apps.apple.com/us/app/landing-party-an-outdoor-rpg/id6469038407",
-        "logo": "images/AppStoreBadge.svg",
-        "logoDark": "images/AppStoreBadgeDarkMode.svg"
+        "logo": "images/logos/app-store-badge.svg",
+        "logoDark": "images/logos/app-store-badge-dark-mode.svg"
       }
     ],
-    "splashScreen": "images/landing-party/Landing-Party-Promo-Art-2-logo-SS.jpg"
+    "splashScreen": "images/landing-party/landing-party-promo.jpg"
   }
 ]

@@ -4,7 +4,7 @@
 
     if (projectId) {
         // We are on project.html
-        fetch('projects.json')
+        fetch('js/projects.json')
             .then(response => response.json())
             .then(projects => {
                 const project = projects.find(p => p.id === projectId);
@@ -20,7 +20,7 @@
             });
     } else if (document.querySelector('.grid-container')) {
         // We are on index.html and want to load the project list
-        fetch('projects.json')
+        fetch('js/projects.json')
             .then(response => response.json())
             .then(projects => {
                 loadProjectList(projects);
