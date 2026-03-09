@@ -29,7 +29,8 @@
 }
 
 h1 {
-    margin-bottom: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 nav {
@@ -60,14 +61,13 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-p {
-    line-height: 1.6;
-    font-family: 'Inter', Arial, sans-serif;
+p, ul, ol, h1, h2, h3, h4, h5, h6 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--heading-color);
-    font-family: 'Inter', Arial, sans-serif;
     transition: color 0.3s ease;
 }
 
@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--heading-color);
     text-decoration: none;
     font-weight: bold;
-    font-Size: 1.4rem;
+    font-size: 1.4rem;
     transition: color 0.3s ease;
 }
 
@@ -130,10 +130,6 @@ main {
     width: 90%;
     max-width: 100rem;
     margin: 0 auto;
-}
-
-.content > * {
-    width: 100%;
 }
 
 .grid-container {
@@ -281,14 +277,6 @@ main {
     font-size: 1.05rem;
 }
 
-.project-link-text p {
-    margin: 0;
-    color: var(--secondary-text);
-    line-height: 1.4;
-    min-width: 0;
-    transition: color 0.3s ease;
-}
-
 .content > * {
     min-width: 0;
 }
@@ -297,6 +285,12 @@ main {
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+button, input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 
 .description--short {
@@ -359,7 +353,7 @@ main {
 .contact {
     margin-top: 3rem;
     border-top: 1px solid var(--contact-border);
-    padding: 1rem;
+    padding: 2rem 1rem;
     text-align: center;
     transition: border-top 0.3s ease;
 }
