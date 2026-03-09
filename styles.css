@@ -38,7 +38,6 @@ nav {
     top: 0;
     z-index: 1000;
     background-color: var(--nav-bg);
-    padding: 2px 20px;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -86,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-element {
-    margin: 0 5px;
+    margin: 0 1rem;
     white-space: nowrap;
     color: var(--heading-color);
     text-decoration: none;
@@ -127,7 +126,8 @@ main {
 }
 
 .content {
-    width: 90%;
+    padding: 0 1rem;
+    width: 100%;
     max-width: 100rem;
     margin: 0 auto;
 }
