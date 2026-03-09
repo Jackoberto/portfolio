@@ -125,7 +125,7 @@
     "shortDescription": "Spellfire is a 1v1 spellcasting arena where the goal is to capture the middle of the map while holding off your opponent.",
     "role": "Gameplay and networking developer.",
     "contributions": [
-      "Made a server browser to be able to connect to your other steam users.",
+      "Made a server browser to be able to connect to other steam users.",
       "Implemented networking, replication of game state, and player input.",
       "Implemented gameplay systems with spells, abilities, scoring, and win conditions.",
       "Integrated FMOD Studio for sound effects and music.",
