@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx @11ty/eleventy && [ -f _site/index.html ]",
+    "build": "npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",
