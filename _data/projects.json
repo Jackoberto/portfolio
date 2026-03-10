@@ -66,7 +66,7 @@
     "subTitle": "Physics-based Puzzle Platformer",
     "date": "Jun 2021",
     "shortDescription": "Forceberg is a physics-based puzzle platformer, created for the Black and White Jam №∞+1 game jam, which we also won.",
-    "Description": "Forceberg is a physics-based puzzle platformer, created for the Black and White Jam №∞+1 game jam, which we also won.",
+    "description": "Forceberg is a physics-based puzzle platformer, created for the Black and White Jam №∞+1 game jam, which we also won.",
     "role": "Gameplay and systems developer.",
     "contributions": [
       "Created the player controller and gravity manipulation system." , 
@@ -124,7 +124,7 @@
     "subTitle": "Multiplayer 1v1 Arena",
     "date": "Jul 2021 - Aug 2021",
     "shortDescription": "Spellfire is a 1v1 spellcasting arena where the goal is to capture the middle of the map while holding off your opponent.",
-    "Description": "Spellfire is a 1v1 spellcasting arena where the goal is to capture the middle of the map while holding off your opponent.",
+    "description": "Spellfire is a 1v1 spellcasting arena where the goal is to capture the middle of the map while holding off your opponent.",
     "role": "Gameplay and networking developer.",
     "contributions": [
       "Made a server browser to be able to connect to other steam users.",
@@ -160,7 +160,7 @@
     "subTitle": "Outdoor RPG",
     "date": "Nov 2021 - Oct 2024",
     "shortDescription": "Landing Party is an outdoor RPG where players explore a foreign planet in their own backyard or local park.",
-    "Description": "Landing Party is an outdoor RPG where players explore a foreign planet in their own backyard or local park.",
+    "description": "Landing Party is an outdoor RPG where players explore a foreign planet in their own backyard or local park.",
     "role": "AR Developer, Gameplay and systems developer.",
     "contributions": [
       "Implemented AR interactions and gameplay mechanics.",
