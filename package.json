@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx @11ty/eleventy && [ -f _site/index.html ] && [ -f _site/robots.txt ] && [ -f _site/sitemap.xml ]",
+    "test": "npx @11ty/eleventy && [ -f _site/index.html ] && [ -f _site/robots.txt ] && [ -f _site/sitemap.xml ] && [ -f _site/about.html ]",
     "build": "npx @11ty/eleventy"
   },
   "repository": {
