@@ -1,0 +1,125 @@
+﻿---
+pagination:
+  data: projects
+  size: 1
+  alias: project
+permalink: "projects/{{ project.id }}/index.html"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ project.title }} | Jack Karlsson</title>
+    <meta name="description" content="{{ project.shortDescription }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jackkarlsson.com/projects/{{ project.id }}/">
+    <meta property="og:title" content="{{ project.title }} | Jack Karlsson">
+    <meta property="og:description" content="{{ project.shortDescription }}">
+    <meta property="og:image" content="https://jackkarlsson.com/{{ project.splashScreen }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jackkarlsson.com/projects/{{ project.id }}/">
+    <meta property="twitter:title" content="{{ project.title }} | Jack Karlsson">
+    <meta property="twitter:description" content="{{ project.shortDescription }}">
+    <meta property="twitter:image" content="https://jackkarlsson.com/{{ project.splashScreen }}">
+
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="icon" type="image/png" href="../../images/icons/favicon.png?v=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="../../js/theme.js"></script>
+</head>
+<body>
+<nav aria-label="Main Navigation">
+    <div class="nav-left">
+        <a class="nav-element" href="../../">Home</a>
+    </div>
+    <div class="nav-right">
+        <a class="nav-element" href="../../#projects"> Projects</a>
+        <a class="nav-element" href="#contact">Contact</a>
+        <a class="nav-element" href="https://github.com/jackoberto" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="nav-element" href="https://www.linkedin.com/in/jackkarlsson/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <span class="moon-icon">🌙</span>
+            <span class="sun-icon">☀️</span>
+        </button>
+    </div>
+</nav>
+    <header class="content">
+        <h1>{{ project.title }}</h1>
+        <p class="project-date">{{ project.date }}</p>
+        <h2>Description</h2>
+    </header>
+<main class="content">
+    <section aria-labelledby="description-heading">
+        <p class="project-description description--long">{{ project.description | safe }}</p>
+        <p class="description--short">{{ project.shortDescription | safe}}</p
+    </section>
+    
+    {% if project.screenshots.length > 0 %}
+    <section class="screenshots" aria-label="Project Screenshots">
+        {% for screenshot in project.screenshots %}
+        <img class="project-screenshot" src="../../{{ screenshot }}" alt="{{ project.title }} Screenshot">
+        {% endfor %}
+    </section>
+    {% endif %}
+
+    <section>
+        <h2>Role</h2>
+        <p aria-labelledby="role-heading">{{ project.role }}</p>
+    </section>
+        {% if project.contributions.length > 0 %}
+            <h2>Contributions</h2>
+            <ul aria-labelledby="contributions-heading">
+                {% for contribution in project.contributions %}
+                <li>{{ contribution }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    <section>
+    
+    </section>
+
+    {% if project.technologies.length > 0 %}
+    <section>
+        <h2>Technologies</h2>
+        <ul aria-labelledby="technologies-heading">
+            {% for tech in project.technologies %}
+            <li>{{ tech }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    {% if project.links.length > 0 %}
+    <section class="project-links">
+        <h2>Links</h2>
+        <div class="project-link-grid" aria-labelledby="links-heading">
+            {% for link in project.links %}
+            <a href="{{ link.url }}" class="project-link-card" target="_blank" rel="noopener noreferrer">
+                <div class='project-link-logo-box'>
+                    <img class="project-link-image logo-light" src="../../{{ link.logo }}" alt="{{ link.platform }} logo" class="link-logo light-only">
+                    <img class="project-link-image logo-dark" src="../../{{ link.logoDark }}" alt="{{ link.platform }} logo" class="link-logo dark-only">
+                </div>
+                <div class="project-link-text">
+                    <h3>{{ link.platform }}</h3>
+                    <p>{{ link.description }}</p>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+</main>
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact</h2>
+    <p><a href="mailto:jackoberto01@gmail.com">jackoberto01@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/jackkarlsson/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+</section>
+</body>
+</html>
